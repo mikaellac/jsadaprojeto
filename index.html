@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Final</title>
+    
+</head>
+<body>
+    <h1>Cadastro Final</h1>
+    <hr/>
+    <form id="form-cadastro">
+        <label class="label" for="codigo">Código</label>
+        <input id="codigo" />
+
+        <label class="label" for="produto">Produto</label>
+        <input id="produto" />
+
+        <label for="quantidade">Quantidade</label>
+        <input id="quantidade" type="number" />
+
+        <label for="preco">Preço Unit</label>
+        <input id="preco" type="number" />
+
+        <button onclick="cadastrar()" type="button">Cadastrar</button>
+    </form>
+
+    <table id="cadastro-table">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Qtd</th>
+                <th>Preço Unit</th>
+                <th>Total</th>
+                <th>Observação</th>
+            </tr>
+        </thead>
+        <tbody id="body-cadastro-table">
+        </tbody>
+    </table>
+    <script src="cadastrar.js"></script>
+</body>
+</html>
